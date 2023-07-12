@@ -1,0 +1,112 @@
+<html>
+<head>
+    <title>Survey Form</title>
+</head>
+<style>
+  /* Add your CSS code here */
+  body {
+    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+  }
+ 
+  h1 {
+    color: rgb(153, 0, 255);
+    text-align: center;
+    font-size: 50;
+  }
+  a.next-page-link {
+    position: fixed;
+    bottom: 20px;
+    left: 90%;
+  }
+  a.Previous-page-link {
+    position: fixed;
+    bottom: 20px;
+    right: 80%;
+  }
+  form {
+    text-align: center;
+  }
+  label {
+    display: block;
+  }
+  .message-box {
+    /* Creates a message-box. You can choose the color, font, padding, etc. */
+    border: 50px solid rgb(156, 156, 250);
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 35;
+  }
+  h2 {
+    color: black;
+    text-align: left;
+    font-size: 30;
+  }
+  ul.option {
+    list-style-type: none; /* Removes the bullets */
+    padding: 0; /* Removes the default padding */
+  }
+</style>
+</head>
+<body>
+  <div class="message-box">
+    <h1>Demographics</h1> 
+    <div>
+      <div class="q1">
+        <h2>What is your gender?</h2>
+        <ul class="option">
+            <li><input type="radio" id="male" name="gender" value="Male"><label for="male">Male</label></li>
+          <li><input type="radio" id="female" name="gender" value="Female"><label for="female">Female</label></li>
+        </ul>
+      </div>
+      <div class="q2">
+        <h2> </h2>
+        <ul class="option">
+          <li><input type="radio" id="12-17" name="age" value="12-17"><label for="12-17">12-17</label></li>
+          <li><input type="radio" id="18-24" name="age" value="18-24"><label for="18-24">18-24</label></li>
+          <li><input type="radio" id="24-35" name="age" value="24-35"><label for="24-35">24-35</label></li>
+          <li><input type="radio" id="35-44" name="age" value="35-44"><label for="35-44">35-44</label></li>
+          <li><input type="radio" id="50+" name="age" value="50+"><label for="50+">50+</label></li>
+        </ul>
+    </div>
+    <div class="q3">
+      <h2> What is your ethnicity?</h2>
+      <ul class="option">
+        <li><input type="radio" id="Black or African American" name="ethnicity" value="Black or African American"><label for="Black or African American">Black or African American</label></li>
+        <li><input type="radio" id="Hispanic or Latino" name="ethnicity" value="Hispanic or Latino"><label for="Hispanic or Latino">Hispanic or Latino</label></li>
+        <li><input type="radio" id="Native American or American Indian" name="ethnicity" value="Native American or American Indian"><label for="Native American or American Indian">Native American or American Indian</label></li>
+        <li><input type="radio" id="Caucasian" name="ethnicity" value="Caucasian"><label for="Caucasian">Caucasian</label></li>
+        <li><input type="radio" id="other" name="ethnicity" value="other"><label for="other">other</label></li>
+      </ul>
+    </div>
+    <div class="q4">
+        <h2>Education?</h2>
+        <ul class="option">
+            <li><input type="radio" id="No schooling completed" name="education" value="No schooling completed"><label for="No schooling completed">No schooling completed</label></li>
+            <li><input type="radio" id="Nusery school to 8th grade" name="education" value="Nusery school to 8th grade"><label for="Nusery school to 8th grade">Nusery school to 8th grade</label></li>
+            <li><input type="radio" id="Some of high school, no diploma" name="education" value="Some of high school, no diploma"><label for="Some of high school, no diploma">Some of high school, no diploma</label></li>
+            <li><input type="radio" id="High school graduate, diploma or the equivalent" name="education" value="High school graduate, diploma or the equivalent"><label for="High school graduate, diploma or the equivalent">High school graduate, diploma or the equivalent</label></li>
+            <li><input type="radio" id="Some of college credit, no degree" name="education" value="Some of college credit, no degree"><label for="Some of college credit, no degree">Some of college credit, no degree</label></li>
+            <li><input type="radio" id="Trade/technical/vocational training" name="education" value="Trade/technical/vocational training"><label for="Trade/technical/vocational training">Trade/technical/vocational training</label></li>
+            <li><input type="radio" id="Associate degree" name="education" value="Associate degree"><label for="Associate degree">Associate degree</label></li>
+            <li><input type="radio" id="Bachelor's degree" name="education" value="Bachelor's degree"><label for="Bachelor's degree">Bachelor's degree</label></li>
+            <li><input type="radio" id="Master's degree" name="education" value="Master's degree"><label for="Master's degree">Master's degree</label></li>
+            <li><input type="radio" id="Professional degree" name="education" value="Professional degree"><label for="Professional degree">Professional degree</label></li>
+            <li><input type="radio" id="Doctorate degree" name="education" value="Doctorate degree"><label for="Doctorate degree">Doctorate degree</label></li>
+        </ul>
+    </div>
+    <div class="q5">
+        <h2> Prior Testing Experience: Have you participated in testing surveys before?</h2>
+        <ul class="option">
+            <li><input type="radio" id="Yes, multiple times" name="experience " value="Yes, multiple times"><label for="Yes, multiple times">Yes, multiple times</label></li>
+            <li><input type="radio" id="Yes, once" name="experience" value="Yes, once"><label for="Yes, once">Yes, once</label></li>
+            <li><input type="radio" id="No, Never" name="experience" value="No, Never"><label for="No, Never">No, Never</label></li>
+        </ul>
+    </div>
+   </div> 
+  </div>
+</body>
+<a href="page3.html" class="next-page-link">Next Page</a>
+<a href="page1.html" class="Previous-page-link">Previous Page</a>
+</html>

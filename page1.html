@@ -1,0 +1,363 @@
+<html>
+<head>
+    <title>Survey Form</title>
+</head>
+<style>
+  /* Add your all CSS code here for designs. Follow the format! All the coding goes inside the curly braces */
+  body {
+    background-color: white; /*gives the background color*/
+    font-family: Arial, sans-serif;/*sets font*/
+  }
+ 
+  h1 {
+    color: rgb(153, 0, 255); /*Gives the first header its design. You can add more headers and decide its color scheme*/
+    text-align: center; /*Aligns the text to where you want it*/
+    font-size: 50;
+  }
+ 
+ 
+  form{
+    text-align:center
+  }
+  label{
+    display: block;
+  }
+  .message-box { /*Creates a message-box. You can choose the color, font, padding etc.*/
+    border: 50px solid  rgb(156, 156, 250);
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 35;
+   
+  }
+  .accept-button { /*Creates the accept button*/
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 25;
+  }
+
+  .accept-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .rating {
+    float: left;
+  }
+  .rating input {
+    display: none;
+  }
+  .rating label {
+    float: right;
+    cursor: pointer;
+    color: grey;
+  }
+  .rating label:before {
+    content: '\2605';
+    font-size: 24px;
+  }
+  .rating input:checked ~ label {
+    color: orange;
+  }
+
+
+ 
+ 
+</style>
+</head>
+<body>
+  <div class="message-box">
+    <h1>Team Drink Survey Form</h1> 
+    <p>
+      Hello, and welcome! You are invited to participate in this focus group/survey of an Aronia berry-based drink.  We are interested in finding out your point of views on the taste and quality of our drink. As well, we want to show you the difference between other power drinks on the market and our line of products and educate you about potential benefits of using new drinks. 
+    </p>
+    <p>
+      Your participation in this study is completely voluntary. You can stop your survey and tasting at any time without specifying the reason. All drink samples are safe to drink and have a printed label with nutrition information and ingredients. On the next page you will find some information about berries used in the drink, and its advantages over other drinks on the market. Then you will be given 6 samples of different drink flavors to try, and finally, you will be asked to answer anonymously on some questions using either a paper form or computerized form. This should take approximately 10 minutes of your time. You will not be contacted again in the future. You will not be paid for being in this study. This focus group/survey does not involve any foreseeable risk to you and there are no direct benefits aside from education regarding new products. However, the benefits of your participation in our research includes helping to create a better formulation for the future marketing of the Aronia berry. 
+    </p>
+    <p>
+      We will be happy to answer any questions you have about this study. If you have further questions about this project or if you have a research-related problem, you may contact our program director, Dr. Victoria Volkis at (410) 651-6030.  
+
+    </p>
+    <p>
+      By clicking OK (or signing the paper form) below, you indicate that you have read and understand the previous information and consent to participate and have your data included in our research. 
+    </p>
+    <p>
+      Thank you in advance for your participation in this study and for supporting science at UMES.
+    </p>
+   
+  </div>
+ </body>
+
+
+<body>
+  <div class="message-box">
+    <h1> Drink Information and Background </h1> 
+    <div>
+      <div class="q1">
+        <h3>Are you familiar with any of the following health drinks? please, check all that apply:  </h3>
+        <ul class="label">
+          <li><input type="checkbox" id="Kombucha" name="option" value="Kombucha"><label for="Kombucha">Kombucha</label></li>
+          <li><input type="checkbox" id="Matcha Tea" name="option" value="Matcha Tea"><label for="Matcha Tea">Matcha Tea</label></li>
+          <li><input type="checkbox" id="Herbal Tea" name="option" value="Herbal Tea"><label for="Herbal Tea">Herbal Tea</label></li>
+          <li><input type="checkbox" id="L-Citrulline" name="option" value="L-Citrulline"><label for="L-Citrulline">L-Citrulline</label></li>
+          <li><input type="checkbox" id="Orange Juice" name="option" value="Orange Juice"><label for="Orange Juice">Orange Juice</label></li>
+          <li><input type="checkbox" id="Coconut Water/Milk" name="option" value="Coconut Water/Milk"><label for="Coconut Water/Milk">Coconut Water/Milk</label></li>
+          <li><input type="checkbox" id="Tomato Juice" name="option" value="Tomato Juice"><label for="Tomato Juice">Tomato Juice</label></li>
+          <li><input type="checkbox" id="None" name="option" value="None"><label for="None">None</label></li>
+          <li><input type="checkbox" id="Other" name="option" value="Other"><label for="Other">Other</label></li>
+        </ul>
+  </div>
+</body>
+<body>
+  <div>
+    <h1>Power Drink Description</h1> 
+    <p>
+        Power drinks, often paralleled with energy drinks or sports drinks, are drinks that may provide benefits towards health and wellness in the human body. They are categorized into three major groups: isotonic; containing an equal level of sodium and sugar as in the human body, hypertonic, containing a higher level of sodium and sugar, and hypotonic; containing a lower level of sodium and sugar. Gatorade, for example, is an isotonic power drink that was designed to replenish lost water and electrolytes in the human body due to sweat, or other causes, especially on peaks of physical activity. 
+    </p>
+    <p>
+        Power Drinks, however, all have a major caveat in that they are not as healthy for you as they claim to be. Taking a closer look at nutrition labels reveals despite being isotonic, these drinks are oversaturated with sodium and over sweetened with sugar, which becomes a problem when trying to market their product to those with hypertension or diabetes. In addition to this, power drinks contain a significant number of inorganic additives, preservatives, and synthetic dyes. Finally, some drinks do not claim to have any health benefits on their label, and do not contain fruits. 
+    </p> 
+    <p>
+        What makes the Aronia berry special is its incredibly high antioxidant content, which can be harnessed in the form of a power drink. For context, Aronia contains around 10 times the concentration of various antioxidants compared to blueberries. In addition to this, Aronia contains vital minerals and microelements, making it an excellent drink in the market promoting a healthy lifestyle. Our Aronia power drinks aim to work around existing drawbacks of traditional power drinks by:  
+        - Being all natural 
+        - Being completely organic 
+        - Using no artificial colorings or flavorings  
+        - Being sugar free 
+        - Containing a wide range of antioxidants, terpenes, essential oils, minerals, and microelements 
+    </p>
+    <p>
+        Using organic additives like herbal teas or similar berries for essential oils, we create different blends of our drink. 
+    </p>
+    <p>
+        And finally, putting the health benefits front and center for our label 
+        Please take this time to sample our drinks and continue with the survey 
+        Once you are done with tasting 3-6 drinks and reading their labels, please, click OK or continue your paper survey. 
+    </p>
+  </div>
+  <body>
+      <h1>Demographic Information</h1> 
+      <div>
+        <div class="q1">
+          <h2> Gender </h2>
+          <ul class="option">
+            <li><input type="radio" id="Male" name="gender" value="Male"><label for="Male">Male</label></li>
+            <li><input type="radio" id="Female" name="gender" value="Female"><label for="Female">Female</label></li>
+            <li><input type="radio" id="Binary" name="gender" value="Binary"><label for="Binary">Binary</label></li>
+            <li> <form action="submit.php" method="post">
+              <input type="text" name="textbox" size="50">
+              <input type="submit" value="Submit">
+            </form></li>
+          </ul>
+        </div>
+        <div class="q2">
+          <h2> Age </h2>
+          <ul class="option">
+            <li><input type="radio" id="12-17" name="age" value="12-17"><label for="12-17">12-17</label></li>
+            <li><input type="radio" id="18-24" name="age" value="18-24"><label for="18-24">18-24</label></li>
+            <li><input type="radio" id="24-35" name="age" value="24-35"><label for="24-35">24-35</label></li>
+            <li><input type="radio" id="35-44" name="age" value="35-44"><label for="35-44">35-44</label></li>
+            <li><input type="radio" id="50+" name="age" value="50+"><label for="50+">50+</label></li>
+          </ul>
+      </div>
+      <div class="q3">
+        <h2> Ethnicity</h2>
+        <ul class="option">
+          <li><input type="radio" id="Black or African American" name="ethnicity" value="Black or African American"><label for="Black or African American">Black or African American</label></li>
+          <li><input type="radio" id="Hispanic or Latino" name="ethnicity" value="Hispanic or Latino"><label for="Hispanic or Latino">Hispanic or Latino</label></li>
+          <li><input type="radio" id="Native American or American Indian" name="ethnicity" value="Native American or American Indian"><label for="Native American or American Indian">Native American or American Indian</label></li>
+          <li><input type="radio" id="Caucasian" name="ethnicity" value="Caucasian"><label for="Caucasian">Caucasian</label></li>
+          <li><form action="submit.php" method="post">
+            <input type="text" name="textbox" size="50">
+            <input type="submit" value="Submit">
+          </form></li>
+        </ul>
+      </div>
+      <div class="q4">
+          <h2>Education</h2>
+          <ul class="option">
+              <li><input type="radio" id="No schooling completed" name="education" value="No schooling completed"><label for="No schooling completed">No schooling completed</label></li>
+              <li><input type="radio" id="Nusery school to 8th grade" name="education" value="Nusery school to 8th grade"><label for="Nusery school to 8th grade">Nusery school to 8th grade</label></li>
+              <li><input type="radio" id="Some of high school, no diploma" name="education" value="Some of high school, no diploma"><label for="Some of high school, no diploma">Some of high school, no diploma</label></li>
+              <li><input type="radio" id="High school graduate, diploma or the equivalent" name="education" value="High school graduate, diploma or the equivalent"><label for="High school graduate, diploma or the equivalent">High school graduate, diploma or the equivalent</label></li>
+              <li><input type="radio" id="Some of college credit, no degree" name="education" value="Some of college credit, no degree"><label for="Some of college credit, no degree">Some of college credit, no degree</label></li>
+              <li><input type="radio" id="Trade/technical/vocational training" name="education" value="Trade/technical/vocational training"><label for="Trade/technical/vocational training">Trade/technical/vocational training</label></li>
+              <li><input type="radio" id="Associate degree" name="education" value="Associate degree"><label for="Associate degree">Associate degree</label></li>
+              <li><input type="radio" id="Bachelor's degree" name="education" value="Bachelor's degree"><label for="Bachelor's degree">Bachelor's degree</label></li>
+              <li><input type="radio" id="Master's degree" name="education" value="Master's degree"><label for="Master's degree">Master's degree</label></li>
+              <li><input type="radio" id="Professional degree" name="education" value="Professional degree"><label for="Professional degree">Professional degree</label></li>
+              <li><input type="radio" id="Doctorate degree" name="education" value="Doctorate degree"><label for="Doctorate degree">Doctorate degree</label></li>
+          </ul>
+      </div>
+      <div class="q5">
+        <h2> Field of Study/Work </h2>
+        <ul class="option">
+          <li><input type="radio" id="Agriculture/farming" name="Work" value="Agriculture/farming"><label for="Agriculture/farming">Agriculture/farming<label></li>
+          <li><input type="radio" id="Science" name="Work" value="Science"><label for="Sci">Science</label></li>
+          <li><input type="radio" id="Law" name="Work" value="Law"><label for="Law">Law</label></li>
+          <li><input type="radio" id="Medicine" name="Work" value="Medicine"><label for="Medicine">Medicine</label></li>
+          <li><input type="radio" id="Engineering" name="Work" value="Engineering"><label for="Engineering">Engineering</label></li>
+          <li> <form action="submit.php" method="post">
+            <input type="text" name="textbox" size="50">
+            <input type="submit" value="Submit">
+          </form></li>
+        </ul>
+      </div>
+  <fieldset  style=" background-color:rgb(161, 154, 234);"> </fieldset>
+  <body>
+    <h1>Favorite Drink Questions</h1>
+  </body>
+  <div class="q6">
+    <h3> Which three drinks did you like the most?</h3>
+    <ul class="label">
+      <li><input type="checkbox" id="Original Aronia Drink" name="drink" value="Original Aronia Drink"><label for="Original Aronia Drink">Original Aronia Drink</label></li>
+      <li><input type="checkbox" id="Ginger" name="drink" value="Ginger"><label for="Ginger">Ginger</label></li>
+      <li><input type="checkbox" id="Ginger w lemon" name="drink" value="Ginger w lemon"><label for="Ginger w lemon">Ginger w lemon</label></li>
+      <li><input type="checkbox" id="Ginger w strawberry" name="drink" value="Ginger w strawberry"><label for="Ginger w strawberry">Ginger w strawberry</label></li>
+      <li><input type="checkbox" id="Fig Powder" name="drink" value="Fig Powder"><label for="Fig Powder">Fig Powder</label></li>
+      <li><input type="checkbox" id="Strawberry" name="drink" value="Strawberry"><label for="Strawberry">Strawberry</label></li>
+      <li><input type="checkbox" id="Raspberry" name="drink" value="Raspberry"><label for="Raspberry">Raspberry</label></li>
+      <li><input type="checkbox" id="Chamomile Tea" name="drink" value="Chamomile Tea"><label for="Chamomile Tea">Chamomile Tea</label></li>
+      <li><input type="checkbox" id="Earl Grey" name="drink" value="Earl Grey"><label for="Earl Grey">Earl Grey</label></li>
+      <li><input type="checkbox" id="Peppermint" name="drink" value="Peppermint"><label for="Peppermint">Peppermint</label></li> 
+    </ul>
+  </div>
+  <div class="q7">
+    <h3> What was your favorite drink out of your top three? </h3> 
+    <ul class="option">
+      <li><input type="checkbox" id="Original Aronia Drink." name="drink" value="Original Aronia Drink"><label for="Original Aronia Drink">Original Aronia Drink.</label></li>
+      <li><input type="checkbox" id="Ginger." name="drink" value="Ginger"><label for="Ginger">Ginger.</label></li>
+      <li><input type="checkbox" id="Ginger w/-lemon." name="drink" value="Ginger w/-lemon."><label for="Ginger w/-lemon.">Ginger w/-lemon.</label></li>
+      <li><input type="checkbox" id="Ginger w/-strawberry." name="drink" value="Ginger w/-strawberry."><label for="Ginger w/-strawberry.">Ginger w/-strawberry.</label></li>
+      <li><input type="checkbox" id="Fig Powder." name="drink" value="Fig Powder."><label for="Fig Powder.">Fig Powder.</label></li>
+      <li><input type="checkbox" id="Strawberry." name="drink" value="Strawberry."><label for="Strawberry.">Strawberry.</label></li>
+      <li><input type="checkbox" id="Raspberry." name="drink" value="Raspberry."><label for="Raspberry.">Raspberry.</label></li>
+      <li><input type="checkbox" id="Chamomile Tea." name="drink" value="Chamomile Tea."><label for="Chamomile Tea.">Chamomile Tea.</label></li>
+      <li><input type="checkbox" id="Earl Grey." name="drink" value="Earl Grey."><label for="Earl Grey.">Earl Grey.</label></li>
+      <li><input type="checkbox" id="Peppermint." name="drink" value="Peppermint."><label for="Peppermint.">Peppermint.</label></li>  
+    </ul>
+  </div>
+  <div class="q8">
+    <h3> How would you rate the overall taste of your preferred drink (5 is very tasty; 1 is not tasty at all)?</h3>
+    <ul class="label">   
+      <li><input type="radio" id="1" name="taste" value="1"><label for="1"> 1 </label></li>
+      <li><input type="radio" id="2" name="taste" value="2"><label for="2"> 2 </label></li>
+      <li><input type="radio" id="3" name="taste" value="3"><label for="3"> 3 </label></li>
+      <li><input type="radio" id="4" name="taste" value="4"><label for="4"> 4 </label></li>
+      <li><input type="radio" id="5" name="taste" value="5"><label for="5"> 5 </label></li>
+    </ul>
+  </div>
+  <div class="q9">
+    <h3> How would you rate the sweetness of your preferred drink </h3>
+    <ul class="label">
+      <li><input type="radio" id="1" name="sweetness" value="1"><label for="1"> 1 </label></li>
+      <li><input type="radio" id="2" name="sweetness" value="2"><label for="2"> 2 </label></li>
+      <li><input type="radio" id="3" name="sweetness" value="3"><label for="3"> 3 </label></li>
+      <li><input type="radio" id="4" name="sweetness" value="4"><label for="4"> 4 </label></li>
+      <li><input type="radio" id="5" name="sweetness" value="5"><label for="5"> 5 </label></li>
+    </ul>
+  </div>
+  <div class="q10">
+    <h3> How would you rate the sourness of your preferred drink?  </h3>
+    <ul class="label">
+      <li><input type="radio" id="1" name="sourness" value="1"><label for="1"> 1 </label></li>
+      <li><input type="radio" id="2" name="sourness" value="2"><label for="2"> 2 </label></li>
+      <li><input type="radio" id="3" name="sourness" value="3"><label for="3"> 3 </label></li>
+      <li><input type="radio" id="4" name="sourness" value="4"><label for="4"> 4 </label></li>
+      <li><input type="radio" id="5" name="sourness" value="5"><label for="5"> 5 </label></li> 
+    </ul>
+  </div>
+
+  <div class="q11">
+    <h3> How would you rate the bitterness of your preferred drink? </h3>
+    <ul class="label">
+      <li><input type="radio" id="1" name="bitterness" value="1"><label for="1"> 1 </label></li>
+      <li><input type="radio" id="2" name="bitterness" value="2"><label for="2"> 2 </label></li>
+      <li><input type="radio" id="3" name="bitterness" value="3"><label for="3"> 3 </label></li>
+      <li><input type="radio" id="4" name="bitterness" value="4"><label for="4"> 4 </label></li>
+      <li><input type="radio" id="5" name="bitterness" value="5"><label for="5"> 5 </label></li> 
+    </ul>
+  </div>
+  <div class="q12">
+    <h3> How would you rate the after-taste of your preferred drink?  </h3>
+    <ul class="label">
+      <li><input type="radio" id="1" name="after-taste" value="1"><label for="1"> 1 </label></li>
+      <li><input type="radio" id="2" name="after-taste" value="2"><label for="2"> 2 </label></li>
+      <li><input type="radio" id="3" name="after-taste" value="3"><label for="3"> 3 </label></li>
+      <li><input type="radio" id="4" name="after-taste" value="4"><label for="4"> 4 </label></li>
+      <li><input type="radio" id="5" name="after-taste" value="5"><label for="5"> 5 </label></li>  
+    </ul>
+  </div>
+  <div class="q13">
+    <h3> Knowing the potential health benefits, would you be more or less likely to drink it? </h3>
+    <ul class="label">
+      <li><input type="radio" id="More likely" name="health" value="More likely"><label for="More likely">More likely</label></li>
+      <li><input type="radio" id="Less likely" name="health" value="Less likely"><label for="Less likely">Less likely</label></li>
+      <li><input type="radio" id="Indifferent" name="health" value="Indifferent"><label for="Indifferent">Indifferent</label></li> 
+    </ul>
+  </div>
+  <div class="q14">
+    <h3> Which proposed additive would you be most interested in?</h3>
+    <ul class="option">
+      <li><input type="checkbox" id="Caffeine." name="additive" value="Caffeine"><label for="Caffeine">Caffeine.</label></li>
+      <li><input type="checkbox" id="Melatonin." name="additive " value="Melatonin"><label for="Melatonin">Melatonin.</label></li>
+      <li><input type="checkbox" id="Herbal Teas." name="additive" value="Herbal Teas."><label for="Herbal Teas.">Herbal Teas.</label></li>
+      <li><input type="checkbox" id="Various organic extracts (Pomegranate, Fig, etc)." name="additive" value="Various organic extracts (Pomegranate, Fig, etc)."><label for="Various organic extracts (Pomegranate, Fig, etc).">Various organic extracts (Pomegranate, Fig, etc).</label></li>
+      <li><input type="checkbox" id="Turmeric." name="additive" value="Turmeric."><label for="Turmeric.">Turmeric.</label></li>
+      <li><input type="checkbox" id="Ginger." name="additive" value="Ginger."><label for="Ginger.">Ginger.</label></li>
+      <li><input type="checkbox" id="None." name="additive" value="None."><label for="None.">None.</label></li>
+      <li>  <form action="submit.php" method="post">
+        <input type="text" name="textbox" size="50">
+        <input type="submit" value="Submit">
+      </form> </li>
+    </ul>
+  </div>
+  <div class="q15">
+    <h3> How often do you think you would see yourself consuming this product? </h3>
+    <ul class="label">
+      <li><input type="radio" id="More than once a day" name="product" value="More than once a day"><label for="More than once a day"> More than once a day </label></li>
+      <li><input type="radio" id="Daily" name="product" value="Daily"><label for="Daily"> Daily </label></li>
+      <li><input type="radio" id="Weekly" name="product" value="Weekly"><label for="Weekly"> Weekly </label></li>
+      <li><input type="radio" id="Monthly" name="product" value="Monthly"><label for="Monthly"> Monthly </label></li>
+      <li><input type="radio" id="Not at all" name="product" value="Not at all"><label for="Not at all"> Not at all </label></li>  
+    </ul>
+  </div>
+  <div class="q16">
+    <h3> On a scale of 1 - 5, how much would you be willing to pay a premium ranging from $5 for this drink per 12 oz bottle? </h3>
+    <ul class="label">
+      <li><input type="radio" id="1  (Unwilling)" name="pay" value="1  (Unwilling)"><label for="1  (Unwilling)"> 1  (Unwilling) </label></li>
+      <li><input type="radio" id="2" name="pay" value="2"><label for="2"> 2 </label></li>
+      <li><input type="radio" id="3 (Indifferent)" name="pay" value="3 (Indifferent)"><label for="3 (Indifferent)"> 3 (Indifferent) </label></li>
+      <li><input type="radio" id="4" name="pay" value="4"><label for="4"> 4 </label></li>
+      <li><input type="radio" id="5 (Very willing)" name="pay" value="5 (Very willing)"><label for="5 (Very willing)"> 5 (Very willing) </label></li>  
+    </ul>
+  </div>
+  <div class="q17">
+    <h3> Is there anything else you would like to mention about your favorite drink or any of the others? </h3>
+    <ul class="text">
+      <form action="submit.php" method="post">
+        <input type="text" name="textbox" size="100">
+        <input type="submit" value="Submit">
+      </form>
+    </ul>
+  </div>
+  <button class="accept-button" onclick="acceptButtonClick()">THANK YOU FOR YOUR PARTICIPATION! PLEASE, CLICK OK TO SUBMIT THE SURVEY OR GIVE A PAPER SURVEY TO YOUR SAMPLES PROVIDER.</button> 
+    <script> /*The script feature allows you to use JavaScript code and add function to the the button created*/
+      function acceptButtonClick() {
+       
+        alert('Hope you enjoyed our drinks!');
+     
+      }
+  
+    </script>
+
+
+
+</html>
+
